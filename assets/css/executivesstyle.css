@@ -21,8 +21,23 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--bg-dark-purple);
+    background-image: url("../images/body-bg.jpg");
+    background-repeat: repeat;
+    color: var(--text-gainsboro);
+    font-family: var(--fontFamily-oxanium);
+    font-size: var(--fontSize-4);
+    font-weight: var(--weight-regular);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+.title h1{
+    padding: 30px;
+    text-align: center;
+    font-weight: 500px;
+    font-size: 50px;
+    color: white;
 }
 
 .container {
@@ -30,7 +45,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    padding: 50px;
+    padding: 10px;
 }
 
 .frame {
