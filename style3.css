@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.formm {
+  margin: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+}
+
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: #999;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+.checks label {
+    margin-top: 0;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+input[type="email"], input[type="text"] {
+    width: 15em;
+}
+
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+.checks {
+    margin-bottom: 1em;
+}
+
+.checks p {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="radio"] {
+    margin-left: 1.5em;
+    margin-right: 0;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+button[type="submit"] {
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: .8em;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media screen and (min-width: 430px) {
+    legend {
+        font-size: 1.7em;
+    }
+
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .checks label {
+        display: inline-block;
+        padding-top: .5em;
+        margin-top: 0;
+        margin-right: .5em;
+    }
+}
